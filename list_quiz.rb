@@ -25,3 +25,17 @@ def bigger_two(list1, list2) # given 2 lists of length 2, return the list with t
 end
 # puts bigger_two([1,2],[3,4]).inspect # [3,4]
 # puts bigger_two([1,7], [4,4]).inspect # [1,7]
+
+def series_up(n) # given n, return a list that goes [1,1,2,1,2,3... n]
+    n_list = []
+    (n+1).times do |m|
+        m.times do |val|
+            n_list.push(val+1)
+        end
+    end
+    return n_list
+end
+# puts series_up(1).inspect
+# puts series_up(2).inspect
+# puts series_up(3).inspect
+# puts series_up(4).inspect
