@@ -14,3 +14,14 @@ end
 # puts three_even?([2,1,4,6]) # false
 # puts three_even?([1,4,6,4]) # true
 # puts three_even?([]) # false
+
+def bigger_two(list1, list2) # given 2 lists of length 2, return the list with the bigger sum. If tie, return list1
+    list1_sum = list1[0] + list1[1]
+    list2_sum = list2[0] + list2[1]
+    if list2_sum > list1_sum
+        return list2
+    end
+    return list1
+end
+# puts bigger_two([1,2],[3,4]).inspect # [3,4]
+# puts bigger_two([1,7], [4,4]).inspect # [1,7]
